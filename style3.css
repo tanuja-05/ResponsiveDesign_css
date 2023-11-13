@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&display=swap');
+
+.container{
+display: grid;
+font-family: 'AR One Sans', sans-serif;
+grid-template-areas: 
+"header header header "
+"main main main"
+"footer footer footer";
+}
+.header{
+display: grid;
+grid-area: header;
+grid-template-columns:repeat(3,650px) ;
+align-items: center;
+justify-content: space-evenly;
+font-size: 25px;
+background-color: #8a8af2;
+color: white;
+padding: 5px;
+}
+.logo>img{
+height: 100px;
+width: 100px;
+}
+.hbac{
+   display: grid;
+   grid-template-columns: repeat(4,100px);
+   grid-column-gap: 10px;
+   justify-content: center;
+}
+.link>a{
+    text-decoration: none;
+    color: white;
+}
+.login{
+display: grid; 
+justify-self:flex-end;
+    }
+button{
+text-decoration: none;
+font-size: 25px;
+padding: 15px 80px 15px 80px;
+background-color: #000000;
+color: #ffffff;
+border: none;
+border-radius: 5px;
+}
+.menu-icon>img{
+   display: none;
+}
+.main{
+    display: grid;
+    grid-area: main;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    align-items: center;
+}
+.info{
+    padding: 50px 120px 50px 120px;
+}
+.info>h2{
+    line-height: 0%;
+    font-size: 40px;
+}
+.info>h1{
+    line-height: 90%;
+    font-size: 65px;
+    font-weight: bolder;
+    color: #1cbfff;
+}
+.oncd{
+    color:#1cbfff ;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.info>img{
+    height: 150px;
+    width: 550px;
+}
+.infopara{
+    margin-top:60px ;
+    font-size: 21px;    
+}
+.pic>video{
+    height: 710px ;
+    width: 750px;
+}
+.footer{
+    display: grid;
+    grid-area: footer;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+.text{
+    padding: 80px;
+}
+.text>h1{
+    text-align: center;
+    font-size: 60px;
+    color: #132aad;
+}
+.textcen>h3{
+    text-align: center;
+    font-size: 30px;
+    line-height: 60%;
+}
+.textexp>h2{
+     text-align: center;
+     font-size:45px ;
+     line-height: 40%;
+}
+@media screen and (max-width:920px) {
+    .header{
+        width: 800px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+     }
+    .hbac,.login{
+        display: none;
+    }
+    .menu-icon > img{
+        display: grid;
+        margin-left: 300px;
+        width: 70px;
+        height: 70px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .info{
+        padding-left: 50px;
+        align-self: self-start;
+    }
+    .infopara{
+        width: 600px;
+    }
+    .pic{
+     justify-self:center;
+     align-self: flex-start;     
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        color: black;
+        justify-self: flex-start;
+        align-self: center;
+    }
+    
+    
+}

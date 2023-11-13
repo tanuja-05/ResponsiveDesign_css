@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&display=swap');
+
+.container{
+    display: grid;
+font-family: 'AR One Sans', sans-serif;
+grid-template-areas: 
+"header header header "
+"main main main";
+}
+.header{
+display: grid;
+grid-area: header;
+grid-template-columns:repeat(3,650px) ;
+align-items: center;
+justify-content: space-evenly;
+font-size: 25px;
+background-color: #8a8af2;
+color: white;
+padding: 5px;
+}
+.logo>img{
+height: 100px;
+width: 100px;
+}
+.hbac{
+   display: grid;
+   grid-template-columns: repeat(4,100px);
+   grid-column-gap: 10px;
+   justify-content: center;
+}
+.login{
+display: grid; 
+justify-items: end;
+    }
+button{
+text-decoration: none;
+font-size: 25px;
+padding: 15px 80px 15px 80px;
+background-color: #000000;
+color: #ffffff;
+border: none;
+border-radius: 5px;
+}
+.main{
+    display: grid;
+    grid-area: main;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    align-items: center;
+}
+.info{
+    padding: 50px 120px 50px 120px;
+}
+.info>h2{
+    font-size: 40px;
+}
+.info>h1{
+    font-size: 85px;
+    font-weight: bolder;
+    color: #1cbfff;
+}
+.oncd{
+    color:#1cbfff ;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.info>img{
+    height: 150px;
+    width: 550px;
+}
+.infopara{
+    margin-top:60px ;
+    font-size: 21px;    
+}
+.pic>video{
+    height: 700px ;
+    width: 750px;
+}
+.header{
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+ }
+.hbac,.login{
+    display: none;
+}
+.menu-icon > img{
+    display: grid;
+    margin-left: 300px;
+    width: 70px;
+    height: 70px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.info{
+    padding-left: 50px;
+    align-self: self-start;
+}
+.infopara{
+    width: 600px;
+}
+.pic{
+ justify-self:center;
+ align-self: flex-start;     
+}
